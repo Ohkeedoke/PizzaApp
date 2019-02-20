@@ -1,0 +1,133 @@
+body{
+  background: #000;
+  font-family: Abel;
+  margin: 0 !important;
+}
+#vue-app {
+  position: relative;
+  margin: 15vh auto 0 auto;
+  width: 800px;
+  height: 600px;
+}
+#pizzaBox {
+  margin: 0 auto 0 auto;
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+#pizza1{
+  position: absolute;
+  top:5%;
+  left:50%;
+  opacity: 0.7;
+  transition: all .2s ease-in-out;
+}
+#pizza2{
+  position: absolute;
+  top:20.2%;
+  left:50.5%;
+  opacity: 0.7;
+  transition: all .2s ease-in-out;
+}
+#pizza3{
+  position: absolute;
+  top:51.7%;
+  left:47.3%;
+  opacity: 0.7;
+  transition: all .2s ease-in-out;
+}
+#pizza4{
+  position: absolute;
+  top:51.7%;
+  left:6.3%;
+  opacity: 0.7;
+  transition: all .2s ease-in-out;
+}
+#pizza5{
+  position: absolute;
+  top:26%;
+  left:2%;
+  opacity: 0.7;
+  transition: all .2s ease-in-out;
+}
+#pizza6{
+  position: absolute;
+  top:4.9%;
+  left:8.1%;
+  opacity: 0.7;
+  transition: all .2s ease-in-out;
+}
+#pizza1:hover, #pizza2:hover, #pizza3:hover, #pizza4:hover, #pizza5:hover, #pizza6:hover{
+  cursor: pointer;
+  opacity: 1.0;
+  transform: scale(1.05);
+}
+.delete{
+  display:none;
+}
+#visible{
+  position: absolute;
+  text-align: center;
+  top: 250px;
+  left: 0px;
+  right: 0px;
+  display: none;
+  color:white;
+  font-size: 30px;
+  transition: all .2s ease-in-out;
+  opacity: 0.5;
+}
+#visible:hover{
+  cursor: pointer;
+  opacity: 1.0;
+}
+#stop{
+  position: absolute;
+  text-align: center;
+  top: 250px;
+  left: 0px;
+  right: 0px;
+  display: none;
+  color:white;
+  font-size: 30px;
+}
+#stop span{
+  color:red;
+}
+#box{
+  position: relative;
+  left:0;
+  background-color: teal;
+  font-size: 25px;
+  }
+#pizzas{
+  color:white;
+  position: absolute;
+  top:30px;
+}
+#pieces{
+  color:white;
+  position: absolute;
+}
+#calories{
+  color:white;
+  position: absolute;
+  right: 0;
+}
+#guy{
+  width: 60px;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#lose{
+  margin-top: 20px;
+  opacity:0.5;
+  color: red;
+  transition: all .2s ease-in-out;
+}
+#lose:hover{
+  cursor: pointer;
+  opacity: 1.0;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VueJS: Pizza</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="vue-app">
+      <div id='box'>
+        <div id="pieces">Pieces of pizza: {{pieces}}</div>
+        <div id="pizzas">Pizzas: {{pizzas}}</div>
+        <div id="calories">Calories: {{calories}} cal</div>
+      </div>
+      <div id='pizzaBox'>
+        <img v-on:click="available1 = !available1, bit()" v-bind:class="{delete:available1}" id="pizza1" src="img/pizza1.png">
+        <img v-on:click="available2 = !available2, bit()" v-bind:class="{delete:available2}" id="pizza2" src="img/pizza2.png">
+        <img v-on:click="available3 = !available3, bit()" v-bind:class="{delete:available3}"id="pizza3" src="img/pizza3.png">
+        <img v-on:click="available4 = !available4, bit()" v-bind:class="{delete:available4}"id="pizza4" src="img/pizza4.png">
+        <img v-on:click="available5 = !available5, bit()" v-bind:class="{delete:available5}"id="pizza5" src="img/pizza5.png">
+        <img v-on:click="available6 = !available6, bit()" v-bind:class="{delete:available6}" id="pizza6" src="img/pizza6.png">
+      </div>
+      <div id="visible" v-on:click="again()">If you want more pizza, click me !</div>
+      <div id="stop">
+        <div id="label"><span >STOP!</span> I think you are full enough.</div>
+        <div v-on:click.once="lose()" id="lose"> Click me to lose your belly fat !</div>
+      </div>
+      <img id="guy" v-bind:src="guy">
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
